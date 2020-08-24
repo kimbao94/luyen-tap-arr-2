@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let arr = []
+    let array = []
+    let n = parseInt(prompt("nhập số phần tử mảng 1"));
+    for (let i = 0; i < n; i++) {
+        arr[i] = parseInt(prompt("Nhập phần tử thứ " + (i + 1)));
+    }
+    document.write("Mảng 1 là: " + arr + "<br>");
+    let k = parseInt(prompt("nhập số phần tử mảng 2"));
+    for (let i = 0; i < k; i++) {
+        array[i] = parseInt(prompt("Nhập phần tử thứ " + (i + 1)));
+    }
+    document.write("Mảng 2 là: " + array + "<br>");
+    if (arr !== array) {
+        document.write("Hai mảng không giống nhau");
+    }
+    else {
+        document.write("Hai mảng giống nhau");
+    }
+</script>

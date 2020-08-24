@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let arr = [ 'c', 's', 'c', '2', '6', '1' ];
+    let change = "";
+    document.write("Mảng đã khai báo: " + arr + "<br>")
+    for (let num = 0; num < arr.length/2; num++){
+        change = arr[num];
+        arr[num] = arr[arr.length - num - 1];
+        arr[arr.length - num - 1] = change;
+    }
+    document.write("Mảng khi đã đảo ngược: " + arr.join(""));
+</script>

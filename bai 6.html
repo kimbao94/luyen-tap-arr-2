@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+</html>
+<script>
+    let arr = []
+    let n = prompt("nhập số phần tử mảng 1");
+    for (let i = 0; i < n; i++) {
+        arr[i] = prompt("Nhập phần tử thứ " + (i + 1));
+    }
+    document.write("Mảng đã nhập: " + arr + "<br>");
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === "-") {
+            arr[i] = "_";
+        }
+    }
+    document.write("Mảng đã thay đổi: " + arr);
+</script>
